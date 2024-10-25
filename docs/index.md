@@ -36,9 +36,9 @@ admin-guide/index
 manage/index
 deployment/index
 volto/index
+classic-ui/index
 plone.restapi/docs/source/index
 backend/index
-classic-ui/index
 i18n-l10n/index
 conceptual-guides/index
 contributing/index
