@@ -12,7 +12,7 @@ myst:
 # Manage Plone backend
 
 This part of the documentation describes how to perform common management tasks in the Plone backend.
-This chapter assumes you have previously followed {doc}`/install/create-project`.
+This chapter assumes you have previously followed {doc}`/admin-guide/install-plonestarter`.
 
 
 ## Manage add-ons and packages

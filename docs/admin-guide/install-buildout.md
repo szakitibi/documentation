@@ -1,0 +1,105 @@
+---
+myst:
+  html_meta:
+    "description": "Install Plone with Buildout"
+    "property=og:description": "Install Plone with Buildout"
+    "property=og:title": "Install Plone with Buildout"
+    "keywords": "Plone 6, install, Classic UI, buildout"
+---
+
+(install-buildout-label)=
+
+# Install Plone with Buildout
+
+This chapter describes how you can install Plone using {term}`Buildout`.
+
+This is one way to install Plone with the Classic UI.
+Using Buildout will be the most familiar approach for admins who have experience with Plone 3, 4, or 5.
+
+```{seealso}
+For other installation options, see {ref}`get-started-install-label`.
+```
+
+(install-buildout-prerequisites)=
+
+## Prerequisites
+
+- Python 3.10 or greater
+
+On Debian-based Linux systems you can install Python with the following command:
+
+```shell
+sudo apt install python3.12 python3.12-dev python3.12-venv
+```
+
+## Installation
+
+Select a directory of your choice:
+
+```shell
+mkdir -p /opt/plone && cd /opt/plone
+```
+
+Create a Python virtual environment:
+
+```shell
+python3 -m venv .
+```
+
+Install the minimal Python packages needed in order to run Buildout:
+
+```shell
+bin/pip install -r https://dist.plone.org/release/6-latest/requirements.txt
+```
+
+Create a `buildout.cfg` file in your directory with the following contents:
+
+```cfg
+[buildout]
+extends =
+    https://dist.plone.org/release/6-latest/versions.cfg
+
+parts =
+    instance
+
+[instance]
+recipe = plone.recipe.zope2instance
+user = admin:admin
+http-address = 8080
+eggs =
+    Plone
+```
+
+Run buildout:
+
+```shell
+bin/buildout
+```
+
+## Run Plone in foreground mode
+
+Start the instance for a quick test in foreground mode:
+
+```shell
+bin/instance fg
+```
+
+Your instance starts in foreground mode, which is only advisable for troubleshooting or for local demonstration purposes.
+
+Now you can call the url `http://localhost:8080` in your browser and you can add a **Classic UI Plone site**.
+
+## Start Plone as a background service
+
+Start the instance:
+
+```shell
+bin/instance start
+```
+
+## Stop Plone as a background service
+
+Stop the instance:
+
+```shell
+bin/instance stop
+```

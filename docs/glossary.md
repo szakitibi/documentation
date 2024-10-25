@@ -21,6 +21,10 @@ AWS
 Barceloneta
     The default theme for Plone 5.
 
+Buildout
+    [Buildout](https://github.com/buildout/buildout/) is a Python-based tool for building and assembling applications from multiple parts, based on a configuration file.
+    It was the most common way of installing Plone 3, 4, and 5, and can still be used with Plone 6.
+
 CMS
     Content Management System
 

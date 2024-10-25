@@ -1,22 +1,26 @@
 ---
 myst:
   html_meta:
-    "description": "Create a Plone project with the Volto frontend (stable release)"
-    "property=og:description": "Create a Plone project with the Volto frontend (stable release)"
-    "property=og:title": "Create a Plone project with the Volto frontend (stable release)"
+    "description": "Install Plone with cookiecutter-plone-starter (deprecated)"
+    "property=og:description": "Install Plone with cookiecutter-plone-starter (deprecated)"
+    "property=og:title": "Install Plone with cookiecutter-plone-starter (deprecated)"
     "keywords": "Plone, Plone 6, Volto, create, project, install, cookiecutter"
 ---
 
 
 (create-a-project-label)=
 
-# Create a project with Volto (stable release)
+# Install Plone with cookiecutter-plone-starter (deprecated)
 
-This chapter describes how you can create a web application using the current **stable release** version of Plone with **Volto 17 or earlier** for the frontend, while having full control over its development and deployment.
+This chapter describes how you can create a web application using the {term}`cookiecutter-plone-starter` template.
 
-```{seealso}
-For other installation options, see {doc}`/install/index`.
+```{deprecated}
+This way of installing Plone is now deprecated.
+It was the recommended way to start a new Plone project with **Plone 6.0** and **Volto 17 or earlier**.
+For other installation options, see {ref}`get-started-install-label`.
 ```
+
+This template creates a web application using Plone with the Volto frontend, along with tools for development and deployment.
 
 
 (install-packages-system-requirements-label)=
