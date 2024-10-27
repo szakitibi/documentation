@@ -29,7 +29,9 @@ install-plonestarter
 :maxdepth: 1
 
 run-plone
+configure-zope
 add-ons
+override-core
 upgrade
 ```
 
@@ -39,7 +41,3 @@ upgrade
 
 containers/index
 ```
-
-
-To do:
-- move and update Manage section

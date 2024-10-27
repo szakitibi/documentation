@@ -33,7 +33,6 @@ Read the [documentation for the previous version, Plone 5](https://5.docs.plone.
 overview/index
 install/index
 admin-guide/index
-manage/index
 deployment/index
 volto/index
 classic-ui/index

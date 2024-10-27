@@ -159,6 +159,8 @@ To actually download and install the new add-on, run:
 bin/buildout
 ```
 
+Then restart your instance.
+
 ### Install an add-on from source
 
 An add-on can be installed from a source control system such as GitHub.
@@ -194,6 +196,8 @@ To actually download and install the new add-on, run:
 ```shell
 bin/buildout
 ```
+
+Then restart your instance.
 
 ```{seealso}
 This approach uses the [`mr.developer`](https://pypi.org/project/mr.developer/) Buildout extension.
