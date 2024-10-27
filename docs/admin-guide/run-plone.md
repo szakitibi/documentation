@@ -39,6 +39,9 @@ with `cookiecutter-plone-starter`:
     make start-backend
     ```
 
+For any of these commands, press {kbd}`ctrl-c` to stop the process.
+
+
 ## Run Volto
 
 If you are using the Volto frontend, you need to run the frontend in a separate process.
@@ -52,6 +55,9 @@ with `cookiecutter-plone-starter`:
 :   ```shell
     make start-frontend
     ```
+
+For any of these commands, press {kbd}`ctrl-c` to stop the process.
+
 
 ## Start Plone as a background service
 
@@ -91,3 +97,5 @@ with `cookiecutter-plone-starter`:
 :   ```shell
     make -C backend debug
     ```
+
+For any of these commands, press {kbd}`ctrl-d` to stop the process.
