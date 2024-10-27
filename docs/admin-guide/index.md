@@ -29,6 +29,7 @@ install-plonestarter
 :maxdepth: 1
 
 run-plone
+add-ons
 upgrade
 ```
 
