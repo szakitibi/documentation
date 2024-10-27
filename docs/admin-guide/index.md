@@ -28,6 +28,7 @@ install-plonestarter
 :caption: Operate
 :maxdepth: 1
 
+run-plone
 upgrade
 ```
 
