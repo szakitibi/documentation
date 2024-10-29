@@ -23,7 +23,7 @@ For other installation options, see {doc}`/install/index`.
 ```
 
 
-{create-project-cookieplone-system-requirements}=
+(create-project-cookieplone-system-requirements)=
 
 ## System requirements
 
