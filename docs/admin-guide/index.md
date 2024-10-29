@@ -18,10 +18,10 @@ In this part of the documentation, you can find how to install, operate, configu
 :caption: Install
 :maxdepth: 1
 
-install-cookieplone
+/install/create-project-cookieplone
 install-buildout
 install-pip
-install-plonestarter
+/install/create-project
 ```
 
 ```{toctree}
@@ -32,12 +32,12 @@ run-plone
 configure-zope
 add-ons
 override-core
-upgrade
+/upgrade/index
 ```
 
 ```{toctree}
 :maxdepth: 1
 :caption: Deploy
 
-containers/index
+/install/containers/index
 ```

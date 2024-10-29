@@ -35,7 +35,7 @@ Choose a version to demo.
 First, choose a Plone frontend. [TODO: add link to explanation of how to choose]
 (If you are following a [Plone training](https://training.plone.org/), it should specify which option to choose.)
 
-{doc}`/admin-guide/install-cookieplone`
+{doc}`create-project-cookieplone`
 :   This is the recommended way to install Plone for a new project with the Volto frontend.
 
 {doc}`/admin-guide/install-buildout`
@@ -46,7 +46,7 @@ First, choose a Plone frontend. [TODO: add link to explanation of how to choose]
 :   This is one way to install Plone with the Classic UI.
     It provides a basic installation without many additional tools to help with development.
 
-{doc}`/admin-guide/install-plonestarter`
+{doc}`create-project`
 :   This was the recommended way to install Plone 6.0 for a new project with the Volto frontend.
 
 {doc}`Install Plone as a contributor </contributing/index>`

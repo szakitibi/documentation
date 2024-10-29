@@ -245,12 +245,8 @@ redirects = {
     "contributing/plone-api": "/plone.api/contribute/index.html",
     "contributing/plone-restapi": "/plone.restapi/docs/source/contributing/index.html",
     "contributing/volto": "/volto/contributing/index.html",
-    "install/containers/index": "/admin-guide/containers/index.html",
-    "install/create-project-cookieplone": "/admin-guide/install-cookieplone.html",
-    "install/create-project": "/admin-guide/install-plonestarter.html",
-    "install/install-from-packages": "/admin-guide/install-cookieplone.html",
+    "install/install-from-packages": "/install/create-project.html",
     "manage/frontend": "/volto/addons/index.html",
-    "upgrade/index": "/admin-guide/upgrade.html",
 }
 
 
