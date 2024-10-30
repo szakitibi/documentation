@@ -739,6 +739,10 @@ Jest
     [Jest](https://jestjs.io/) is a JavaScript testing framework.
     Volto uses Jest for unit tests.
 
+Cypress
+    [Cypress](https://www.cypress.io/) is a JavaScript testing framework that runs your app in the browser for visually debugging it.
+    Volto uses Cypress for acceptance tests.
+
 Plone
     Plone is an open-source content management system (CMS) with over 20 years of stability and security wrapped in a modern, powerful, user-centric package.
     It continues to set the standard for content management systems by offering the most functionality and customization out of the box.
