@@ -54,6 +54,7 @@ For developers and integrators:
 * The frontend and backend run in a single Python process, so hosting is a bit simpler.
 * The frontend is implemented as server-side templates using the {term}`ZPT` language.
 * Interactive functionality is implemented in JavaScript using {term}`Mockup`.
+* The visual design is based on the {term}`Barceloneta` theme from Plone 5, but updated to use Twitter Bootstrap 5.
 * Content is stored as HTML.
 * Customization of themes is not well-documented.
 
