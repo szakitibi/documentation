@@ -14,7 +14,7 @@ myst:
 The Plone 6 images have all the system requirements, prerequisites, and Plone 6 already installed, except those requirements needed for running the container engine itself.
 
 Using containers is the easiest way to deploy Plone 6.
-Containers may also be used when {doc}`creating a Plone project </admin-guide/install-cookieplone>`.
+Containers may also be used when {doc}`creating a Plone project </install/create-project-cookieplone>`.
 
 The Plone 6 container images are compliant with the [Open Container Initiative (OCI)](https://opencontainers.org/).
 They should work with any OCI-compliant container engine for developing, managing, and running Plone 6 images.

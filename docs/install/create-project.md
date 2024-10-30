@@ -14,7 +14,7 @@ myst:
 
 This chapter describes how you can create a web application using the {term}`cookiecutter-plone-starter` template.
 
-```{deprecated}
+```{deprecated}  Plone 6.1 & Volto 18
 This way of installing Plone is now deprecated.
 It was the recommended way to start a new Plone project with **Plone 6.0** and **Volto 17 or earlier**.
 For other installation options, see {ref}`get-started-install-label`.
