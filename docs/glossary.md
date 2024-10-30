@@ -168,8 +168,8 @@ Rapido application
     It contains the features you implement.
     It is a folder containing templates, Python code, and YAML files.
 
-block
-    Blocks display a chunk of HTML which can be inserted in your Plone pages.
+blocks
+    Blocks are the fundamental components of a page layout in {term}`Volto`.
 
 element
     Elements are the dynamic components of your blocks.
@@ -411,18 +411,19 @@ Traefik Proxy
 
 Volto
     [Volto](https://github.com/plone/volto) is a React-based frontend for Plone.
-    It is the default user interface for Plone 6.
+    It is one of two supported user interfaces for Plone 6.
 
-    The other frontend is {term}`Classic UI`.
+    ````{seealso}
+    {doc}`/conceptual-guides/choose-user-interface`
+    ````
 
 Classic UI
-    Classic UI is a secondary frontend for Plone 6.
-    It is integrated with [Products.CMFPlone](https://github.com/plone/Products.CMFPlone/).
-    Its theme is named [Barceloneta](https://github.com/plone/plonetheme.barceloneta/).
-    It is based on Twitter Bootstrap 5.
-    It uses {term}`Mockup` as its JavaScript stack.
+    Classic UI is a frontend for Plone 6 that is based on {term}`ZPT` and {term}`Mockup`.
+    It is one of two supported user interfaces for Plone 6.
 
-    The other frontend is {term}`Volto`.
+    ````{seealso}
+    {doc}`/conceptual-guides/choose-user-interface`
+    ````
 
 Mockup
     [Mockup](https://github.com/plone/mockup/) is a package that, together with {term}`Patternslib`, builds the UI toolkit for {term}`Classic UI`, a frontend for Plone.
@@ -792,4 +793,8 @@ lazy loaded
 reference implementation
     A reference implementation is a program that implements all requirements from a corresponding specification.
     The reference implementation often accompanies a technical standard, and demonstrates what should be considered the "correct" behavior of any other implementation of it.
+
+portlets
+    Portlets are widgets that can be inserted in predefined locations in {term}`Classic UI`.
+    Portlets are most commonly used to add sidebars to the left or right of the main page content.
 ```

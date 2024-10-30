@@ -19,7 +19,9 @@ You can also {ref}`try a Plone demo <install-index-try-plone-label>`.
 
 ## Get started
 
-Choose an option to get started with Plone.
+First, read {doc}`/conceptual-guides/choose-user-interface` to choose between Volto and Classic UI.
+
+Then, choose one of the following install methods.
 If you are following a [Plone training](https://training.plone.org/), it should specify which option to choose.
 
 {doc}`create-project`
