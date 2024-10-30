@@ -26,6 +26,8 @@ For other installation options, see {ref}`get-started-install-label`.
 ```
 
 
+(create-project-cookieplone-system-requirements)=
+
 ## System requirements
 
 Plone 6 has both hardware requirements and software prerequisites.
