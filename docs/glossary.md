@@ -296,7 +296,6 @@ TC39
     They established a [process](https://tc39.es/process-document/) where the proposals are discussed, developed, and eventually approved (or dropped).
     The process has five Stages (0 to 4) where reaching the Stage 4 means the proposal is finished, and it becomes part of the JavaScript specification.
 
-mrs-developer
 `mrs-developer`
     Also called "missdev", a tool similar to buildout's `mr.developer`.
     It automatically downloads and keeps up to date copies of software and add-ons under development based on definitions stored in `mrs.developer.json`.
@@ -696,7 +695,6 @@ Varnish
 Content Delivery Network
 CDN
     A Content Delivery Network (CDN) is a network of servers located in various geographic regions that work together to deliver web content to users quickly and efficiently.
-
 
 unique identifier
 UID
