@@ -55,12 +55,6 @@ Install the minimal Python packages needed in order to run Buildout.
 bin/pip install -r https://dist.plone.org/release/6-latest/requirements.txt
 ```
 
-Install Buildout into the Python virtual environment.
-
-```shell
-bin/pip install zc.buildout
-```
-
 Create a `buildout.cfg` file in your directory with the following contents:
 
 ```cfg
