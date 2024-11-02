@@ -3,13 +3,13 @@ myst:
   html_meta:
     "description": "How to install, operate, configure, and deploy Plone 6"
     "property=og:description": "How to install, operate, configure, and deploy Plone 6"
-    "property=og:title": "Admin Guide"
+    "property=og:title": "Admin guide"
     "keywords": "Plone 6, admin, install, configuration, deploy"
 ---
 
 (admin-index-label)=
 
-# Admin Guide
+# Admin guide
 
 In this part of the documentation, you can find how to install, operate, configure, and deploy Plone.
 
@@ -31,6 +31,9 @@ install-pip
 run-plone
 configure-zope
 add-ons
+% TODO: uncomment the following link when https://github.com/plone/volto/pull/6397 is merged.
+% https://volto--6397.org.readthedocs.build/development/add-ons/install-an-add-on.html
+% /volto/development/add-ons/index
 override-core
 /upgrade/index
 ```
