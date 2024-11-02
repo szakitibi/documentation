@@ -22,15 +22,22 @@ For other installation options, see {ref}`get-started-install-label`.
 
 (install-buildout-prerequisites)=
 
-## Prerequisites
+## Prerequisites for installation
 
-- Python (SUPPORTED_PYTHON_VERSIONS_PLONE61)
+- For Plone 6.0, Python {SUPPORTED_PYTHON_VERSIONS_PLONE60}
+- For Plone 6.1, Python {SUPPORTED_PYTHON_VERSIONS_PLONE61}
+- Buildout
 
-On Debian-based Linux systems you can install Python with the following command:
 
-```shell
-sudo apt install python3.12 python3.12-dev python3.12-venv
+### Python
+
+```{include} /_inc/_install-python-plone61.md
 ```
+
+### Buildout
+
+See [Getting started with Buildout](http://www.buildout.org/en/latest/getting-started.html).
+
 
 ## Installation
 
