@@ -4,7 +4,7 @@ myst:
     "description": "Install Plone with Buildout"
     "property=og:description": "Install Plone with Buildout"
     "property=og:title": "Install Plone with Buildout"
-    "keywords": "Plone 6, install, Classic UI, buildout"
+    "keywords": "Plone 6, install, Classic UI, Buildout"
 ---
 
 (install-buildout-label)=
@@ -24,7 +24,7 @@ For other installation options, see {ref}`get-started-install-label`.
 
 ## Prerequisites
 
-- Python 3.10 or greater
+- Python (SUPPORTED_PYTHON_VERSIONS_PLONE61)
 
 On Debian-based Linux systems you can install Python with the following command:
 
