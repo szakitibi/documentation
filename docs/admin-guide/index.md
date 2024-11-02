@@ -31,12 +31,13 @@ install-pip
 run-plone
 configure-zope
 add-ons
-% TODO: uncomment the following link when https://github.com/plone/volto/pull/6397 is merged.
-% https://volto--6397.org.readthedocs.build/development/add-ons/install-an-add-on.html
-% /volto/development/add-ons/index
 override-core
 /upgrade/index
 ```
+% TODO: uncomment and add the following link to the Operate toctree when https://github.com/plone/volto/pull/6397 is merged.
+% https://volto--6397.org.readthedocs.build/development/add-ons/install-an-add-on.html
+% /volto/development/add-ons/index
+
 
 ```{toctree}
 :maxdepth: 1
