@@ -11,5 +11,5 @@ Enter values in the form, and click the button {guilabel}`Create Plone Site`.
 
 You will be redirected to your new Classic UI Plone site.
 
-To stop the Plone instance in foreground mode, type {kbd}`CTRL-C`.
+To stop the Plone instance in foreground mode, type {kbd}`ctrl-c`.
 
