@@ -124,14 +124,8 @@ Once that's done, you can start an instance of Plone with the following command.
 ./bin/instance fg
 ```
 
-To visit your Plone instance, you can open the link http://0.0.0.0:8080 in a web browser.
-
-You will be presented with several options.
-Click the button {guilabel}`Create Classic UI Plone site`.
-
-Enter values in the form, and click the button {guilabel}`Create Plone Site`.
-
-You will be redirected to your new Classic UI Plone site.
+```{include} /_inc/_create-classic-ui-instance.inc
+```
 
 ```{warning}
 Ignore the warning about accessing the Plone backend through its Classic UI frontend.
@@ -140,11 +134,6 @@ Do not follow the instructions to install Volto.
 They will not work with buildout.
 To contribute to Volto, you will need to start over, and follow {doc}`../volto`.
 ```
-
-To login, the default credentials are the following.
-
--   username: `admin`
--   password: `admin`
 
 
 (contributing-core-work-with-git-label)=

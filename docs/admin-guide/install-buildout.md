@@ -37,10 +37,11 @@ For other installation options, see {ref}`get-started-install-label`.
 
 ## Installation
 
-Select a directory of your choice.
+Select a directory of your choice, and change it to your working directory.
 
 ```shell
-mkdir -p <my_projects>/plone && cd <my_projects>/plone
+mkdir -p <my_projects>/plone
+cd <my_projects>/plone
 ```
 
 Create a Python virtual environment.
@@ -55,7 +56,7 @@ Install the minimal Python packages needed in order to run Buildout.
 bin/pip install -r https://dist.plone.org/release/6-latest/requirements.txt
 ```
 
-Create a `buildout.cfg` file in your directory with the following contents:
+Create a {file}`buildout.cfg` file in your directory with the following contents.
 
 ```cfg
 [buildout]
@@ -67,6 +68,7 @@ parts =
 
 [instance]
 recipe = plone.recipe.zope2instance
+# user = username:password - Use a secure token in a production environment.
 user = admin:admin
 http-address = 8080
 eggs =
@@ -82,7 +84,7 @@ bin/buildout
 This may take a few minutes.
 
 
-## Run Plone in foreground mode
+## Start Plone in foreground mode
 
 Start the instance for a quick test in foreground mode:
 
@@ -90,19 +92,8 @@ Start the instance for a quick test in foreground mode:
 bin/instance fg
 ```
 
-Your instance starts in foreground mode.
-This should be used only for troubleshooting or local demonstration purposes.
-
-Now you can visit `http://localhost:8080` in your browser.
-Select {guilabel}`Create Classic UI Plone site`.
-
-Enter {guilabel}`username` of `admin`, and {guilabel}`password` of `admin`.
-
-Fill out the form as needed, and click {guilabel}`Create Plone Site`.
-
-You will be redirected to your new Plone instance.
-
-To stop the Plone instance in foreground mode, type {kbd}`CTRL-C`.
+```{include} /_inc/_create-classic-ui-instance.inc
+```
 
 
 ## Start Plone as a background service

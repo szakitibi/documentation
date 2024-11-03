@@ -20,45 +20,51 @@ It provides a basic installation without many additional tools to help with deve
 For other installation options, see {ref}`get-started-install-label`.
 ```
 
-## Prerequisites
+(install-pip-prerequisites)=
 
-- Python 3.10 or greater
+## Prerequisites for installation
 
-On Debian-based systems you can install Python with following command:
+-   For Plone 6.0, Python {SUPPORTED_PYTHON_VERSIONS_PLONE60}
+% TODO: These instructions install Plone 6.0.x. Uncomment next line and change the subsequent include when Plone 6.1 is released and "latest". 
+% -   For Plone 6.1, Python {SUPPORTED_PYTHON_VERSIONS_PLONE61}
 
-```shell
-sudo apt install python3.12 python3.12-dev python3.12-venv
+
+### Python
+
+```{include} /_inc/_install-python-plone60.md
 ```
+
 
 ## Installation
 
-Select a directory of your choice:
+Select a directory of your choice, and change it to your working directory.
 
 ```shell
-mkdir -p /opt/plone
-cd /opt/plone
+mkdir -p <my_projects>/plone
+cd <my_projects>/plone
 ```
 
-Create a Python virtual environment:
+Create a Python virtual environment.
 
 ```shell
 python3 -m venv .
 ```
 
-Install Plone and a helper package:
+Install Plone and a helper package, {term}`pipx`.
 
 ```shell
 bin/pip install -c https://dist.plone.org/release/6.0-latest/constraints.txt Plone pipx
 ```
 
+
 ## Create a Zope instance
 
-Create a file `instance.yaml` with the following contents:
+Create a file {file}`instance.yaml` in your directory with the following contents.
 
 ```yaml
-# please change the password to a secure token!
 default_context:
   initial_user_name: "admin"
+# Use a secure token for the password in a production environment.
   initial_user_password: "admin"
   wsgi_listen: "localhost:8080"
   debug_mode: false
@@ -69,20 +75,20 @@ default_context:
   }
 ```
 
-Now run the {term}`cookiecutter` tool to create configuration for a Zope instance:
+Now run the {term}`cookiecutter` tool to create configuration for a Zope instance.
 
 ```
 bin/pipx run cookiecutter -f --no-input --config-file instance.yaml gh:plone/cookiecutter-zope-instance
 ```
 
+
 ## Start Plone in foreground mode
 
-Start the instance for a quick test:
+Start the instance for a quick test.
 
 ```shell
 bin/runwsgi -v instance/etc/zope.ini
 ```
 
-Your instance starts in foreground mode, which is only advisable for troubleshooting or for local demonstration purposes.
-
-Now you can call the url `http://localhost:8080` in your browser and you can add a **Classic UI Plone site**.
+```{include} /_inc/_create-classic-ui-instance.inc
+```
