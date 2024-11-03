@@ -4,7 +4,7 @@ myst:
     "description": "Get started with Plone 6"
     "property=og:description": "Get started with Plone 6"
     "property=og:title": "Get started"
-    "keywords": "Plone 6, install, overview"
+    "keywords": "Plone 6, install"
 ---
 
 (get-started-label)=
@@ -24,30 +24,41 @@ This part of the documentation helps you find the best way to get started with P
 
 Choose a version to demo.
 
--   [Plone 6 with Volto frontend](https://demo.plone.org/)
--   [Plone 6 with Classic UI](https://classic.demo.plone.org/login?came_from=/en)
+https://volto.demo.plone.org/
+:   Plone 6 with Volto frontend
+
+https://demo.plone.org/
+:   Plone 6 with Volto frontend and some add-ons, including Volto Light Theme, with content that demonstrates all the content types of Plone and blocks in Volto
+
+[https://classic.demo.plone.org/](https://classic.demo.plone.org/login?came_from=/en)
+:   Plone 6 with Classic UI frontend
 
 
 (get-started-install-label)=
 
 ## Install Plone
 
-First, choose a Plone frontend. [TODO: add link to explanation of how to choose]
-(If you are following a [Plone training](https://training.plone.org/), it should specify which option to choose.)
+First, choose a Plone user interface, or frontend.
+
+```{TODO}
+Add link to explanation of how to choose a frontend.
+```
+
+If you are following a [Plone training](https://training.plone.org/), it should specify which option to choose.
 
 {doc}`create-project-cookieplone`
 :   This is the recommended way to install Plone for a new project with the Volto frontend.
 
 {doc}`/admin-guide/install-buildout`
-:   This is one way to install Plone with the Classic UI.
+:   This is one way to install Plone with the Classic UI frontend.
     Using Buildout will be the most familiar way for admins who have experience with Plone 3, 4, or 5.
 
 {doc}`/admin-guide/install-pip`
-:   This is one way to install Plone with the Classic UI.
+:   This is one way to install Plone with the Classic UI frontend.
     It provides a basic installation without many additional tools to help with development.
 
 {doc}`create-project`
-:   This was the recommended way to install Plone 6.0 for a new project with the Volto frontend.
+:   Installing Plone 6.0 with `cookiecutter-plone-starter` was the recommended way to install for a new project with the Volto frontend, but it is now deprecated in Plone 6.1.
 
 {doc}`Install Plone as a contributor </contributing/index>`
 :   This option is for developers who want to contribute to Plone and its packages.
@@ -60,6 +71,7 @@ First, choose a Plone frontend. [TODO: add link to explanation of how to choose]
 The {doc}`/conceptual-guides/index` explain concepts to help you understand Plone.
 
 The community has created a set of [Plone trainings](https://training.plone.org/) which are hosted separately from the documentation.
+Plone trainings take place at every annual Plone Conference.
 
 
 (get-started-contribute-label)=
@@ -67,6 +79,3 @@ The community has created a set of [Plone trainings](https://training.plone.org/
 ## Contribute to Plone
 
 See the {doc}`Contributor Guide </contributing/index>` to learn how to participate in the Plone community and contribute to our open source software. 
-
-
-(install-index-getting-started-label)=
