@@ -10,15 +10,15 @@ myst:
 
 (create-a-project-label)=
 
-# Install Plone with cookiecutter-plone-starter (deprecated)
+# Install Plone with `cookiecutter-plone-starter` (deprecated)
 
-This chapter describes how you can create a web application using the {term}`cookiecutter-plone-starter` template.
-
-```{deprecated}  Plone 6.1 & Volto 18
-This way of installing Plone is now deprecated.
-It was the recommended way to start a new Plone project with **Plone 6.0** and **Volto 17 or earlier**.
+```{deprecated} Plone 6.1 and Volto 18
+This method to install Plone is now deprecated.
+It was the recommended way to start a new Plone project with Plone 6.0 and Volto 17 or earlier.
 For other installation options, see {ref}`get-started-install-label`.
 ```
+
+This chapter describes how you can create a web application using the {term}`cookiecutter-plone-starter` template.
 
 This template creates a web application using Plone with the Volto frontend, along with tools for development and deployment.
 
@@ -27,7 +27,7 @@ This template creates a web application using Plone with the Volto frontend, alo
 
 ## System requirements
 
-Plone 6 has both hardware requirements and software prerequisites.
+Plone 6.0 has both hardware requirements and software prerequisites.
 
 
 (install-packages-hardware-requirements-label)=
@@ -159,15 +159,9 @@ Now the instructions to install Yarn should work.
 
 (install-packages-install-label)=
 
-## Install Plone 6
+## Install Plone 6.0
 
-We install Plone 6 with {term}`pipx`, {term}`Cookiecutter`, {term}`mxdev`, {term}`make`, and other developer tools.
-
-```{note}
-We do not maintain documentation for installing Plone 6 or later with `buildout`.
-For Plone 5, `buildout` was the preferred installation method.
-You can read the [documentation of how to install Plone 5 with `buildout`](https://5.docs.plone.org/manage/installing/installation_minimal_buildout.html), and adapt it to your needs for Plone 6.
-```
+We install Plone 6.0 with {term}`pipx`, {term}`Cookiecutter`, {term}`mxdev`, {term}`make`, and other developer tools.
 
 Create a new directory to hold your project, and make it your current directory.
 
