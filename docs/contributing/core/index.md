@@ -124,7 +124,7 @@ Once that's done, you can start an instance of Plone with the following command.
 ./bin/instance fg
 ```
 
-```{include} /_inc/_create-classic-ui-instance.inc
+```{include} /_inc/_create-classic-ui-instance.md
 ```
 
 ```{warning}

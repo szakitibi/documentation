@@ -90,5 +90,5 @@ Start the instance for a quick test.
 bin/runwsgi -v instance/etc/zope.ini
 ```
 
-```{include} /_inc/_create-classic-ui-instance.inc
+```{include} /_inc/_create-classic-ui-instance.md
 ```

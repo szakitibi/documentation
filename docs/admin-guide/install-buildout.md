@@ -92,7 +92,7 @@ Start the instance for a quick test in foreground mode:
 bin/instance fg
 ```
 
-```{include} /_inc/_create-classic-ui-instance.inc
+```{include} /_inc/_create-classic-ui-instance.md
 ```
 
 
