@@ -60,7 +60,7 @@ Plone 6 has both hardware requirements and software prerequisites.
 
 #### Python
 
-```{include} /_inc/_install-python.md
+```{include} /_inc/_install-python-plone60.md
 ```
 
 
