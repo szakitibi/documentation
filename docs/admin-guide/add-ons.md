@@ -1,29 +1,33 @@
 ---
 myst:
   html_meta:
-    "description": "Install Plone Add-ons"
-    "property=og:description": "Install Plone Add-ons"
-    "property=og:title": "Install Plone Add-ons"
-    "keywords": "Plone 6, addon, add-on, package, plugin, extension, install"
+    "description": "Install Plone add-ons"
+    "property=og:description": "Install Plone add-ons"
+    "property=og:title": "Install Plone add-ons"
+    "keywords": "Plone 6, add-on, package, plugin, extension, install"
 ---
 
-(install-plone-addons-label)=
+(install-plone-add-ons-label)=
 
-# Install Plone Add-ons
+# Install Plone add-ons
 
-This chapter explains how to install {term}`add-ons <Add-on>` as Python packages to extend the functionality of the Plone backend or Classic UI.
+This chapter explains how to install {term}`add-ons <add-on>` as Python packages to extend the functionality of the Plone backend or Classic UI.
 
 ```{note}
-The Volto frontend has its own system of add-ons using Node.js packages. See {doc}`/volto/addons/index`.
+The Volto frontend has its own system of add-ons using Node.js packages.
+% TODO: update the following link after https://github.com/plone/volto/pull/6397 is merged to point to `/development/add-ons/index`.
+See {doc}`/volto/addons/index`.
 ```
 
-## with Cookieplone
 
-Use the following instructions if you installed Plone with Cookieplone or `cookiecutter-plone-starter`.
+## Cookieplone
+
+Use the following instructions if you installed Plone with either Cookieplone or `cookiecutter-plone-starter`.
+
 
 ### Install an add-on
 
-Add a line with the name of your add-on in `backend/requirements.txt`.
+Add a line with the name of your add-on in the file {file}`backend/requirements.txt`.
 This example uses [`collective.easyform`](https://pypi.org/project/collective.easyform/).
 
 ```
@@ -31,10 +35,10 @@ collective.easyform==4.2.1
 ```
 
 ```{tip}
-Including the add-on version ensures that it won't accidentally get upgraded in the future.
+Including the add-on version, or "pinning a version", ensures that it won't unintentionally get upgraded in the future.
 ```
 
-Also add the add-on to `zcml_package_includes` in {file}`backend/instance.yaml` to make sure its configuration will be loaded:
+Also add the add-on to `zcml_package_includes` in the file {file}`backend/instance.yaml` to make sure its configuration will be loaded.
 
 ```yaml
 default_context:
@@ -43,19 +47,23 @@ default_context:
 
 Stop the backend with {kbd}`ctrl-c`.
 
-To actually download and install the new add-on, run:
+To actually download and install the new add-on, run the following command.
 
 ```shell
 make backend-build
 ```
 
 ```{note}
-If you installed Plone using `cookiecutter-plone-starter`, run `make build-backend` instead.`
+If you installed Plone using `cookiecutter-plone-starter`, run `make build-backend` instead.
 ```
 
 Now restart the backend.
 
-In your web browser, and assuming you are currently logged in as `admin`, visit the URL http://localhost:8080/Plone/prefs_install_products_form.
+```{seealso}
+{doc}`run-plone`
+```
+
+In your web browser, and assuming you are currently logged in as an administrator, visit the URL http://localhost:8080/Plone/prefs_install_products_form.
 
 Then click the {guilabel}`Install` button next to your add-on to complete installation of the add-on.
 
@@ -68,7 +76,7 @@ At the bottom of the page, you should see the heading {guilabel}`Add-on Configur
 
 An add-on can be installed from a source control system such as GitHub.
 
-Add a line with the name of your add-on in `backend/requirements.txt`.
+Add a line with the name of your add-on in the file {file}`backend/requirements.txt`.
 This example uses [`collective.easyform`](https://pypi.org/project/collective.easyform/).
 
 ```
@@ -76,17 +84,18 @@ collective.easyform
 ```
 
 ```{note}
-When installing an add-on from source, it's best to not pin a version, to make sure we use the version that's currently available in the source control system.
+When installing an add-on from source, it's best not to pin a version.
+This way you always get the version that's currently available in the source control system.
 ```
 
-Also add the add-on to `zcml_package_includes` in {file}`backend/instance.yaml` to make sure its configuration will be loaded:
+Next add the add-on to `zcml_package_includes` in the file {file}`backend/instance.yaml` so that its configuration will load.
 
 ```yaml
 default_context:
     zcml_package_includes: project_title, collective.easyform
 ```
 
-Finally, add the package's source to {file}`mx.ini`:
+Finally, add the package's source to the file {file}`mx.ini`.
 
 ```cfg
 [collective.easyform]
@@ -102,19 +111,23 @@ See the [documentation of `mxdev` in its README.md](https://github.com/mxstack/m
 
 Stop the backend with {kbd}`ctrl-c`.
 
-To actually download and install the new add-on, run:
+To actually download and install the new add-on, run the following command.
 
 ```shell
 make backend-build
 ```
 
 ```{note}
-If you installed Plone using `cookiecutter-plone-starter`, run `make build-backend` instead.`
+If you installed Plone using `cookiecutter-plone-starter`, run `make build-backend` instead.
 ```
 
 Now restart the backend.
 
-In your web browser, and assuming you are currently logged in as `admin`, visit the URL http://localhost:8080/Plone/prefs_install_products_form.
+```{seealso}
+{doc}`run-plone`
+```
+
+In your web browser, and assuming you are currently logged in as an administrator, visit the URL http://localhost:8080/Plone/prefs_install_products_form.
 An upgrade step might need to be performed in the Plone control panel.
 Follow the upgrade information, if present.
 Else click the {guilabel}`Install` button to complete installation of the add-on.
@@ -126,7 +139,7 @@ Use the following instructions if you installed Plone with Buildout.
 
 ### Install an add-on
 
-Update {file}`buildout.cfg`.
+Update the file {file}`buildout.cfg`.
 This example uses [`collective.easyform`](https://pypi.org/project/collective.easyform/).
 
 ```cfg
@@ -150,10 +163,10 @@ collective.easyform = 4.2.1
 ```
 
 ```{tip}
-Including the add-on version ensures that it won't accidentally get upgraded in the future.
+Including the add-on version, or "pinning a version", ensures that it won't unintentionally get upgraded in the future.
 ```
 
-To actually download and install the new add-on, run:
+To actually download and install the new add-on, run the following command.
 
 ```shell
 bin/buildout
@@ -161,11 +174,16 @@ bin/buildout
 
 Then restart your instance.
 
+```{seealso}
+{doc}`run-plone`
+```
+
+
 ### Install an add-on from source
 
-An add-on can be installed from a source control system such as GitHub.
+You can install an add-on from a source control system such as GitHub.
 
-Update {file}`buildout.cfg`.
+Update the file {file}`buildout.cfg`.
 This example uses [`collective.easyform`](https://pypi.org/project/collective.easyform/).
 
 ```cfg
@@ -191,13 +209,17 @@ eggs =
 collective.easyform = git https://github.com/collective/collective.easyform.git
 ```
 
-To actually download and install the new add-on, run:
+To actually download and install the new add-on, run the following command.
 
 ```shell
 bin/buildout
 ```
 
 Then restart your instance.
+
+```{seealso}
+{doc}`run-plone`
+```
 
 ```{seealso}
 This approach uses the [`mr.developer`](https://pypi.org/project/mr.developer/) Buildout extension.
