@@ -39,10 +39,7 @@ https://demo.plone.org/
 ## Install Plone
 
 First, choose a Plone user interface, or frontend.
-
-```{TODO}
-Add link to explanation of how to choose a frontend.
-```
+% TODO: once https://github.com/plone/documentation/pull/1749 is merged, link to it
 
 If you are following a [Plone training](https://training.plone.org/), it should specify which option to choose.
 
