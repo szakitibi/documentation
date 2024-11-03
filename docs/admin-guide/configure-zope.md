@@ -23,13 +23,13 @@ You can configure your Zope instance's options, including the following.
 -   debugging and profiling for development
 
 
-## Via Cookieplone
+## Cookieplone
 
 If you installed Plone using Cookieplone, `cookiecutter-plone-starter`, or pip, then Zope is configured using {term}`cookiecutter-zope-instance`.
 For a complete list of features, usage, and options, read [`cookiecutter-zope-instance`'s README](https://github.com/plone/cookiecutter-zope-instance#readme).
 
 
-## Via Buildout
+## Buildout
 
 If you installed Plone using Buildout, then Zope is configured using `plone.recipe.zope2instance`.
 For a complete list of features, usage, and options, read [`plone.recipe.zope2instance`'s README](https://pypi.org/project/plone.recipe.zope2instance/).
