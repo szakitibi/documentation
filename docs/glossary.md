@@ -104,9 +104,9 @@ pm2
     [PM2](https://pm2.keymetrics.io/) is a daemon process manager.
 
 REST API
-    ```{todo}
-    REST API in general. REST API of Plone.
-    ```
+     A REST API (also called a RESTful API or RESTful web API) is an application programming interface (API) that conforms to the design principles of the representational state transfer (REST) architectural style.
+     REST APIs provide a flexible, lightweight way to integrate applications and to connect components in microservices architectures.
+     Plone uses [`plone.restapi`](https://github.com/plone/plone.restapi/) for its REST API.
 
 S3
     [Amazon Web Services S3](https://aws.amazon.com/s3/).
@@ -445,11 +445,17 @@ Patternslib
     Accessibility, SEO, and well-structured HTML are core values of Patterns.
 
 Slate
-    [Slate.js](https://docs.slatejs.org/) is a highly customizable platform for creating rich-text editors, also known as `WYSIWYG` editors.
+    [Slate.js](https://docs.slatejs.org/) is a highly customizable platform for creating rich-text editors, also known as {term}`WYSIWYG` editors.
     It enables you to create powerful, intuitive editors similar to those you've probably used in Medium, Dropbox Paper, or Google Docs.
 
 `volto-slate`
-    `volto-slate` is an interactive default text editor for Volto, developed on top of {term}`Slate`, offering enhanced WYSIWYG functionality and behavior.
+    `volto-slate` is an interactive default text editor for Volto, developed on top of {term}`Slate`, offering enhanced {term}`WYSIWYG` functionality and behavior.
+
+WYSIWYG
+    WYSIWYG is an acronym for "what you see is what you get", referring to software that allows content to be edited in a form that resembles its appearance when printed or displayed as a finished product.    
+
+TinyMCE
+    The rich text {term}`WYSIWYG` editor used in {term}`Classic UI`.
 
 elementEditor
     A generic {term}`volto-slate` plugin architecture that can be used to create other editor interactions that follow the pattern of having a button that toggles a format (an inline element).
