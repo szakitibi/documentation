@@ -172,7 +172,7 @@ blocks
     Blocks are the fundamental components of a page layout in {term}`Volto`.
 
 element
-    Elements are the dynamic components of your blocks.
+    Elements are the dynamic components of your {term}`blocks`.
     They can be input fields, buttons, or computed HTML.
     They can also return JSON if you call them from a JavaScript app.
 
@@ -419,7 +419,7 @@ Traefik Proxy
 
 Volto
     [Volto](https://github.com/plone/volto) is a React-based frontend for Plone.
-    It is one of two supported user interfaces for Plone 6.
+    It is one of two supported user interfaces, or frontends, for Plone 6.
 
     ````{seealso}
     {doc}`/conceptual-guides/choose-user-interface`
@@ -427,7 +427,7 @@ Volto
 
 Classic UI
     Classic UI is a frontend for Plone 6 that is based on {term}`ZPT` and {term}`Mockup`.
-    It is one of two supported user interfaces for Plone 6.
+    It is one of two supported user interfaces, or frontends, for Plone 6.
 
     ````{seealso}
     {doc}`/conceptual-guides/choose-user-interface`
@@ -803,6 +803,6 @@ reference implementation
     The reference implementation often accompanies a technical standard, and demonstrates what should be considered the "correct" behavior of any other implementation of it.
 
 portlets
-    Portlets are widgets that can be inserted in predefined locations in {term}`Classic UI`.
+    Portlets are widgets that can be inserted in predefined locations in pages in {term}`Classic UI`.
     Portlets are most commonly used to add sidebars to the left or right of the main page content.
 ```
