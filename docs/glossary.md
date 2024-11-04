@@ -104,9 +104,9 @@ pm2
     [PM2](https://pm2.keymetrics.io/) is a daemon process manager.
 
 REST API
-     A REST API (also called a RESTful API or RESTful web API) is an application programming interface (API) that conforms to the design principles of the representational state transfer (REST) architectural style.
-     REST APIs provide a flexible, lightweight way to integrate applications and to connect components in microservices architectures.
-     Plone uses [`plone.restapi`](https://github.com/plone/plone.restapi/) for its REST API.
+    A REST API (also called a RESTful API or RESTful web API) is an application programming interface (API) that conforms to the design principles of the representational state transfer (REST) architectural style.
+    REST APIs provide a flexible, lightweight way to integrate applications and to connect components in microservices architectures.
+    Plone uses [`plone.restapi`](https://github.com/plone/plone.restapi/) for its REST API.
 
 S3
     [Amazon Web Services S3](https://aws.amazon.com/s3/).
