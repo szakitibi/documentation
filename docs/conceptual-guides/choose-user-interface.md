@@ -28,7 +28,7 @@ The choice of user interface has implications for editors, admins, and developer
 For editors and other end users:
 
 -   The user interface is a fast, modern, single-page web application.
--   Editors create a page by arranging {term}`blocks` of different types into a layout.
+-   Editors can create sophisticated page layouts by arranging {term}`blocks` of different types.
 -   There is not a comprehensive {doc}`/volto/user-manual/index` yet, and only a few pages exist.
 
 For developers and integrators:
@@ -51,7 +51,7 @@ For editors and other end users:
 
 -   The user interface is similar to Plone 5.
 -   Editors create a page using a {term}`WYSIWYG` editor, {term}`TinyMCE`.
--   Additional widgets can be added to predefined locations, using {term}`portlets`.
+-   Additional widgets can be added to predefined locations, using {term}`portlets`. More sophisticated page layout requires the use of add-ons.
 -   There is a comprehensive [User Manual for Plone 5](https://5.docs.plone.org/working-with-content/index.html), but it has not been updated for Plone 6.
 
 For developers and integrators:
