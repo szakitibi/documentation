@@ -11,10 +11,11 @@ myst:
 
 # Classic UI
 
-This chapter is a developer reference manual for working with Classic UI.
+This chapter is a developer reference manual for working with {term}`Classic UI`.
 
 ```{seealso}
-Plone has two user interfaces, Volto and Classic UI. To understand the difference, see {doc}`/conceptual-guides/choose-user-interface`.
+Plone has two user interfaces, Volto and Classic UI.
+To understand their differences, see {doc}`/conceptual-guides/choose-user-interface`.
 ```
 
 ```{toctree}
