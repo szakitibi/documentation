@@ -51,7 +51,8 @@ For editors and other end users:
 
 -   The user interface is similar to Plone 5.
 -   Editors create a page using a {term}`WYSIWYG` editor, {term}`TinyMCE`.
--   Additional widgets can be added to predefined locations, using {term}`portlets`. More sophisticated page layout requires the use of add-ons.
+-   Additional widgets can be added to predefined locations, using {term}`portlets`.
+    More sophisticated page layout requires the use of add-ons.
 -   There is a comprehensive [User Manual for Plone 5](https://5.docs.plone.org/working-with-content/index.html), but it has not been updated for Plone 6.
 
 For developers and integrators:
