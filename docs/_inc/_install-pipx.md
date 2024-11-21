@@ -1,5 +1,5 @@
 Install {term}`pipx` for your active Python, and ensure it is on your `$PATH`.
-Carefully read the console output for further instructions, if needed.
+Carefully read the console output for further instructions, and follow them, if needed.
 
 ```shell
 python3 -m pip install pipx
