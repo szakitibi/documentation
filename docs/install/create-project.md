@@ -45,7 +45,7 @@ Plone 6.0 has both hardware requirements and software prerequisites.
 ```{include} ../volto/contributing/install-operating-system.md
 ```
 
--   Python {SUPPORTED_PYTHON_VERSIONS_PLONE60}
+-   Python {{SUPPORTED_PYTHON_VERSIONS_PLONE60}}
 -   {term}`pipx`
 -   {term}`nvm`
 -   {term}`Node.js` LTS 20.x
