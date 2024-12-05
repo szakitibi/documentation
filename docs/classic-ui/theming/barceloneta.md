@@ -359,4 +359,4 @@ To add custom formats, you can provide your own files using the same logic. The 
 
 CSS styles defined in this file will automatically be added to the top level of TinyMCE's "Formats" menu.
 
-Alternatively, TinyMCE can be customized by adding the styles through the [`formats` option in the JSON configuration](https://www.tiny.cloud/docs/tinymce/5/content-formatting/).
+Alternatively, TinyMCE can be customized by adding the styles through the [`formats` option in the JSON configuration](https://www.tiny.cloud/docs/tinymce/7/content-formatting/).
