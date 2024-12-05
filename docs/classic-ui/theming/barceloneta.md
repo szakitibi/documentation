@@ -345,3 +345,18 @@ $enable-negative-margins:     true !default;
 $enable-deprecation-messages: true !default;
 $enable-important-utilities:  false !default;
 ```
+
+## Customizing TinyMCE
+
+In Plone 6, a special logic is implemented for TinyMCE that automatically reads registered files named `tinymce-formats.css` and adds the CSS classes defined in those files to TinyMCE's "Formats" dropdown menu.
+
+Plone 6 Classic UI ships with the Barceloneta theme, which includes two custom formats (`highlight-inline` and `p.highlight-paragraph`) in the TinyMCE "Formats" dropdown. These formats can be removed by modifying the **"TinyMCE Settings"** (`@@tinymce-controlpanel`). To do this, navigate to the **"Choose the CSS used in WYSIWYG Editor Area"** field and remove the `++theme++barceloneta/tinymce/tinymce-formats.css` entry. Once removed, the custom formats will no longer appear in the dropdown.
+
+To add custom formats, you can provide your own files using the same logic. The file must:
+1. Be named `tinymce-formats.css`.
+2. Be registered as a resource in your Plone site.
+3. Be included in the **TinyMCE control panel**.
+
+CSS styles defined in this file will automatically be added to the top level of TinyMCE's "Formats" menu.
+
+Alternatively, TinyMCE can be customized by adding the styles through the [`formats` option in the JSON configuration](https://www.tiny.cloud/docs/tinymce/5/content-formatting/).
